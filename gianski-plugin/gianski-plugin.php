@@ -21,10 +21,10 @@ class GianskiPlugin{
     add_action('init', array($this, 'portfolio_post_type'));
   }
   function activate(){
-
+    flush_rewrite_rules();
   }
   function deactivate(){
-
+    flush_rewrite_rules();
   }
   function uninstall(){
 
